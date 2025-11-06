@@ -6,7 +6,6 @@ import "./App.css";
 
 
 function App() {
-  const base_url="127.0.0.1:8000"
   const [message, setMessage] = useState(""); 
   const [chat, setChat] = useState([]);
   const [loading, setLoading] = useState(false);
