@@ -20,7 +20,7 @@ function App() {
     setLoading(true);
 
     try {
-      const res = await axios.post("https://ali-alfred-ox2w7vrce-alis-projects-ad09e9e8.vercel.app/chat?message=" + message);
+      const res = await axios.post("https://ali-alfred.vercel.app/chat?message=" + message);
       const aiMsg = { sender: "ai", text: res.data.ai_response };
       setChat((prev) => [...prev, aiMsg]);
     } catch (err) {
